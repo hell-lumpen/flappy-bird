@@ -26,7 +26,7 @@ function App() {
   useEffect(() => {
     const birdAnimation = setInterval(() => {
       setBirdFrame((prevFrame) => (prevFrame + 1) % 3);
-    }, 150);
+    }, 100);
     return () => clearInterval(birdAnimation);
   }, []);
 
